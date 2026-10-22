@@ -3,29 +3,52 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sulfata · Soporte y textos legales</title>
-<meta name="description" content="Soporte y textos legales de Sulfata, la app de consulta del registro de productos fitosanitarios.">
+<title>Soporte · Sulfata</title>
+<meta name="description" content="Sulfata: consulta de los productos fitosanitarios autorizados en España para cada cultivo y plaga.">
 <style>
   :root { --bg:#F7F9F4; --text:#10261A; --muted:#4A5D52; --primary:#15803D; --border:#D5DED7; }
   @media (prefers-color-scheme: dark) { :root { --bg:#141310; --text:#E8E4D9; --muted:#ADA796; --primary:#7FAE83; --border:#33312A; } }
   body { margin:0; background:var(--bg); color:var(--text); font:17px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif; }
   main { max-width: 68ch; margin: 0 auto; padding: 32px 16px 56px; }
-  h1 { font-size: 26px; line-height: 1.25; margin: 0 0 12px; }
+  nav { display:flex; justify-content:space-between; gap:16px; margin-bottom: 24px; font-size: 15px; }
+  h1 { font-size: 26px; line-height: 1.25; margin: 0 0 4px; }
   h2 { font-size: 19px; margin: 28px 0 6px; }
+  h3 { font-size: 17px; margin: 20px 0 4px; }
+  p.fecha { color: var(--muted); margin: 0 0 24px; }
   a { color: var(--primary); }
+  ul { padding-left: 1.2em; }
+  li { margin-bottom: 8px; }
   footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--muted); font-size: 15px; }
 </style>
 </head>
 <body>
 <main>
+  <nav><a href="index.html">Sulfata · soporte</a><a href="ca/index.html" hreflang="ca">Català</a></nav>
   <h1>Sulfata</h1>
-  <p>Consulta de los productos fitosanitarios autorizados en España para cada cultivo y plaga, con su dosis, su plazo de seguridad y el número máximo de aplicaciones. Funciona sin conexión.</p>
-
+  <p>Consulta qué productos fitosanitarios están autorizados para tu cultivo y tu plaga, con su dosis, plazo de seguridad y condiciones de uso. Funciona sin conexión.</p>
   <h2>Soporte</h2>
-  <p>Escríbenos a <a href="mailto:jcaapps.soporte+sulfata@gmail.com">jcaapps.soporte+sulfata@gmail.com</a>. Si es un fallo, dinos el modelo del móvil y qué estabas consultando.</p>
-
+  <p>Escríbenos a <a href="mailto:jcaapps.soporte+sulfata@gmail.com">jcaapps.soporte+sulfata@gmail.com</a>. Si es un fallo, dinos qué estabas consultando; desde la app («Más › Escríbenos») el correo ya lleva la versión y la fecha de los datos.</p>
+  <h2>Preguntas frecuentes</h2>
+  <h3>¿De dónde salen los datos y cada cuánto se actualizan?</h3>
+  <p>Del Registro oficial de Productos Fitosanitarios del Ministerio de Agricultura, Pesca y Alimentación. Lo comprobamos cada día y, cuando el Ministerio publica datos nuevos, la app los baja sola la próxima vez que la abres con conexión. La fecha de los datos sale siempre arriba («datos del…»).</p>
+  <h3>¿Funciona sin conexión?</h3>
+  <p>Sí. Todo el registro va dentro de la app: puedes buscar, ver las fichas y Mis productos en el campo, sin cobertura. Solo hace falta conexión para recibir datos nuevos y para abrir la web del registro.</p>
+  <h3>No encuentro mi cultivo, mi plaga o mi producto</h3>
+  <p>Prueba con menos letras o con otro nombre (por ejemplo, «viña» o «vid»). Solo salen los cultivos y plagas que tienen algún producto autorizado. Un producto que ya no está autorizado no sale en los resultados si está activado «Solo vigentes»: quítalo para verlo, o búscalo por su nombre o su n.º de registro.</p>
+  <h3>¿Qué significa «NO PROCEDE» en el plazo de seguridad?</h3>
+  <p>Es como lo escribe el registro cuando ese uso no tiene plazo de seguridad, por ejemplo porque se aplica en un momento en que no hay cosecha. La app lo muestra tal cual. Ante la duda, mira la etiqueta del producto.</p>
+  <h3>¿Qué quieren decir las marcas rojas?</h3>
+  <p>Que el producto ya no está vigente en el registro (por ejemplo, cancelado), con la fecha hasta la que se puede vender si la hay. «Ya no está en el registro» quiere decir que el Ministerio lo ha quitado de sus datos.</p>
+  <h3>¿Por qué solo puedo guardar 5 productos?</h3>
+  <p>Mis productos guarda hasta 5 productos en este móvil. Si llegas al límite, quita alguno para guardar otro.</p>
+  <h3>He visto un dato que no coincide con la etiqueta</h3>
+  <p>Manda siempre la etiqueta del producto. Sulfata enseña los datos del registro oficial con su fecha, y la etiqueta puede ser más reciente. Si crees que la app tiene un error, escríbenos desde «Escríbenos» con el producto y el cultivo: lo revisaremos.</p>
   <h2>Textos legales</h2>
-  <p><a href="privacidad.html">Política de privacidad</a></p>
+  <ul>
+    <li><a href="privacidad.html">Política de privacidad</a></li>
+    <li><a href="condiciones.html">Condiciones de uso</a></li>
+    <li><a href="aviso.html">Aviso de uso</a></li>
+  </ul>
 
   <footer>© 2026 Jan Camps Atmetller. Sulfata no está afiliada al Ministerio de Agricultura, Pesca y Alimentación ni a ningún organismo oficial. Fuente de los datos: <a href="https://servicio.mapa.gob.es/regfiweb">Registro de Productos Fitosanitarios</a>.</footer>
 </main>
